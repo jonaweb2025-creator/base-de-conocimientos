@@ -1,0 +1,44 @@
+{
+  "categorias": [
+    {
+      "id": "curso",
+      "nombre": "Curso",
+      "descripcion": "Material de formación y capacitación."
+    },
+    {
+      "id": "procedimiento",
+      "nombre": "Procedimiento",
+      "descripcion": "Instrucciones establecidas para realizar una tarea."
+    },
+    {
+      "id": "normativa",
+      "nombre": "Normativa",
+      "descripcion": "Leyes, reglamentos, resoluciones y normas aplicables."
+    },
+    {
+      "id": "manual",
+      "nombre": "Manual",
+      "descripcion": "Documentación técnica o de referencia."
+    },
+    {
+      "id": "instructivo",
+      "nombre": "Instructivo",
+      "descripcion": "Instrucciones específicas para realizar una actividad."
+    },
+    {
+      "id": "seguridad",
+      "nombre": "Seguridad",
+      "descripcion": "Información relacionada con seguridad operacional."
+    },
+    {
+      "id": "emergencia",
+      "nombre": "Emergencia",
+      "descripcion": "Procedimientos e información relacionada con situaciones de emergencia."
+    },
+    {
+      "id": "referencia",
+      "nombre": "Referencia",
+      "descripcion": "Información complementaria utilizada como fuente de consulta."
+    }
+  ]
+}
