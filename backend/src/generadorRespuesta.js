@@ -145,7 +145,23 @@ RESPUESTA
 
         });
 
-    return respuesta.message.content;
+    const textoRespuesta =
+    respuesta.message.content.trim();
+
+const mensajeSinInformacion =
+    "La información disponible en la Base de Conocimiento no es suficiente para responder esta pregunta.";
+
+// Si la IA determina que no existe información suficiente,
+// impedir que agregue explicaciones o información relacionada.
+if (
+    textoRespuesta.includes(
+        mensajeSinInformacion
+    )
+) {
+    return mensajeSinInformacion;
+}
+
+return textoRespuesta;
 }
 
 

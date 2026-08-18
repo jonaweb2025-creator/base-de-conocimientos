@@ -6,6 +6,10 @@ const {
     generarRespuesta
 } = require("../src/generadorRespuesta");
 
+const {
+    guardarConsulta
+} = require("../src/historial");
+
 // ==========================================
 // PREGUNTA DE PRUEBA
 // ==========================================
@@ -53,8 +57,22 @@ async function ejecutar() {
             contexto
         );
 
+// ======================================
+// 3. GUARDAR EN HISTORIAL
+// ======================================
+
+guardarConsulta({
+    pregunta,
+    respuesta,
+    fuentes: contexto
+});
+
+console.log(
+    "\nConsulta guardada en el historial."
+);
+
     // ======================================
-    // 3. MOSTRAR RESPUESTA
+    // 4. MOSTRAR RESPUESTA
     // ======================================
 
     console.log(
